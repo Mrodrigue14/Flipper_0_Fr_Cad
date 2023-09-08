@@ -1,0 +1,43 @@
+REM scare your friend on mouse trigger!
+DELAY 400
+GUI r
+DELAY 500
+ALTSTRING powershell.exe
+DELAY 600
+ENTER
+DELAY 800
+ALTSTRING Function Set-Speaker($Volume){$wshShell = new-object -com wscript.shell;1..50 | % {$wshShell.SendKeys([char]174)};1..$Volume | % {$wshShell.SendKeys([char]175)}}
+DELAY 500
+ENTER
+DELAY 500
+ALTSTRING Set-Speaker -Volume 100
+DELAY 600
+ENTER
+DELAY 400
+STRING exit
+DELAY 400
+ENTER
+DELAY 800
+GUI S
+DELAY 1000
+ALTSTRING camera
+DELAY 900
+ENTER
+DELAY 3500
+ENTER
+DELAY 2000
+GUI r
+DELAY 500
+ALTSTRING powershell -w h Add-Type -AssemblyName *m.W*s.F*s;$w=[Windows.Forms.Cursor];$p=$w::Position.X;while(1){if($w::Position.X-ne$p){break}else{Sleep 3}};saps https://youtu.be/FjdbFmV_gTs?t=84;sleep 5;$o=New-Object -ComObject WScript.Shell;$o.SendKeys('f');
+DELAY 500
+ENTER
+DELAY 900
+GUI S
+DELAY 800
+ALTSTRING google
+DELAY 500
+ENTER
+DELAY 2000
+F11
+
+
